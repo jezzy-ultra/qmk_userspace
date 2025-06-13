@@ -17,4 +17,4 @@
 #define RGB_MATRIX_VAL_STEP        5
 #define RGB_MATRIX_SPD_STEP        5
 
-#define TAPPING_TERM               200  // milliseconds
+#define TAPPING_TERM               400  // milliseconds
