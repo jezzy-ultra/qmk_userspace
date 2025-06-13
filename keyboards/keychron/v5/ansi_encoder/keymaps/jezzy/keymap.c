@@ -72,9 +72,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 #ifdef ENCODER_MAP_ENABLE
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [QWERTY] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
-    [CLMKDH] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
-    [FN]     = { ENCODER_CCW_CW(RM_PREV, RM_NEXT)},
+    [QWERTY]  = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
+    [CLMKDH]  = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
+    [FN]      = { ENCODER_CCW_CW(RM_PREV, RM_NEXT)},
 };
 #endif  // ENCODER_MAP_ENABLE
 
@@ -124,10 +124,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
-    rgb_t orange   = { .r = 255, .g = 43,  .b = 0   };
-    rgb_t lavender = { .r = 255, .g = 40,  .b = 255 };
-    rgb_t magenta  = { .r = 255, .g = 28,  .b = 40  };
-    rgb_t green    = { .r = 102, .g = 255, .b = 0   };
+    rgb_t orange    = { .r = 255, .g = 43,  .b = 0   };
+    rgb_t lavender  = { .r = 255, .g = 40,  .b = 255 };
+    rgb_t magenta   = { .r = 255, .g = 28,  .b = 40  };
+    rgb_t green     = { .r = 102, .g = 255, .b = 0   };
 
     #ifdef CAPS_LOCK_LED_INDEX
     if (host_keyboard_led_state().caps_lock) {
@@ -172,8 +172,8 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 #endif  // RGB_MATRIX_ENABLE
 
 void keyboard_post_init_user(void) {
-    debug_enable   = true;
-    debug_matrix   = true;
-    debug_keyboard = true;
-    debug_mouse    = true;
+    debug_enable    = true;
+    debug_matrix    = true;
+    debug_keyboard  = true;
+    debug_mouse     = true;
 }
