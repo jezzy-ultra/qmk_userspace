@@ -64,9 +64,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [FN] = LAYOUT_ansi_98(
         QK_BOOT,            _______,  _______,  _______,  _______,  EE_CLR,   _______,  _______,  _______,  QK_RBT,   _______,    _______,  _______,            KC_PSCR,  KC_SCRL,  KC_PAUS,  RM_TOGG,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,    _______,  KC_INS,             KC_NUM,   RM_SPDD,  RM_SPDU,  _______,
-        _______,  KC_ESC,   KC_UP,    KC_ENT,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,    _______,  _______,            RM_HUEU,  RM_SATU,  RM_VALU,
-        _______,  KC_LEFT,  KC_DOWN,  KC_RGHT,  _______,  _______,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  _______,  _______,              _______,            RM_HUED,  RM_SATD,  RM_VALD,  _______,
-        _______,            KC_DEL,   KC_BSPC,  KC_CAPS,  _______,  _______,  _______,  _______,  _______,  _______,  _______,              _______,  KC_PGUP,  _______,  _______,  _______,
+        KC_HOME,  KC_ESC,   KC_UP,    KC_ENT,   KC_END,   _______,  _______,  _______,  _______,  _______,  _______,  _______,    _______,  _______,            RM_HUEU,  RM_SATU,  RM_VALU,
+        _______,  KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_PGUP,  _______,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  _______,  _______,              _______,            RM_HUED,  RM_SATD,  RM_VALD,  _______,
+        _______,            KC_DEL,   KC_BSPC,  KC_CAPS,  KC_PGDN,  _______,  _______,  _______,  _______,  _______,  _______,              _______,  KC_PGUP,  _______,  _______,  _______,
         _______,  _______,  _______,                                _______,                                _______,  KC_APP,     _______,  KC_HOME,  KC_PGDN,  KC_END,   _______,  NK_TOGG,  _______),
 };
 
